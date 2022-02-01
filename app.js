@@ -4,8 +4,11 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', function(request, response, next){
-   
-    response.sendFile(__dirname + '/views/home.html')
+    response.sendFile(__dirname + '/views/home.html');
 });
 
-app.listen(3000)
+app.get('/about', function(request, response, next){
+    response.sendFile(__dirname + '/views/about.html');
+});
+
+app.listen(3000);
