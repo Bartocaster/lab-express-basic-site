@@ -27,3 +27,34 @@ body {
 #main>h3 {
     width: 80%;
 }
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2>div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid2x2>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.grid-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
