@@ -11,4 +11,8 @@ app.get('/about', function(request, response, next){
     response.sendFile(__dirname + '/views/about.html');
 });
 
+app.get('/works', function(request, response, next){
+    response.sendFile(__dirname + '/views/works.html');
+});
+
 app.listen(3000);
