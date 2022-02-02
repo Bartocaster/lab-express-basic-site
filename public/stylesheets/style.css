@@ -51,3 +51,10 @@ body {
     width: 80%;
 }
 
+.fix-height{
+    height: 100vh;
+}
+
+.img-cover {
+    object-fit: cover;
+}

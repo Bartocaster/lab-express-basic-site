@@ -15,4 +15,8 @@ app.get('/works', function(request, response, next){
     response.sendFile(__dirname + '/views/works.html');
 });
 
+app.get('/photogallery', function(request, response, next){
+    response.sendFile(__dirname + '/views/photo_gallery.html');
+});
+
 app.listen(3000);
